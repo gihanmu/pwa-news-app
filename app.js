@@ -11,14 +11,14 @@ window.addEventListener('load', async e => {
         updateNews(e.target.value);
     });
 
-    // if('serviceWorker' in navigator){
-    //     try{
-    //         navigator.serviceWorker.register('sw.js');
-    //         console.log('Service Worker registered');
-    //     }catch(error){
-    //         console.log('Error in registering Service Worker');
-    //     }
-    // }
+    if('serviceWorker' in navigator){
+        try{
+            navigator.serviceWorker.register('sw.js');
+            console.log('Service Worker registered');
+        }catch(error){
+            console.log('Error in registering Service Worker');
+        }
+    }
 });
 
 async function updateNews(source = defaultSource){
