@@ -9,15 +9,6 @@ body {
   margin: 12px auto;
 }
 
-main{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  min-height: 100vh;
-}
-
 .article a {
   color: inherit;
   text-decoration: none;
@@ -48,9 +39,4 @@ main{
   font-weight: bold;
 }
 
-.source-selector{
-  width: 20%;
-  left: 40%;
-  position: absolute;
-  top: 8%;
-}
+

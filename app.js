@@ -41,13 +41,18 @@ function createSource(source){
 
 function createArticle(article){
     return `
-        <div class="article">
-            <a href="${article.url}">
-                <p class="title">${article.title}</p>
-                <img src="${article.urlToImage}">
-                <p class="description">${article.description}</p>
-            </a>
+        <div class="row">
+            <div class="col-sm-12 col-xs-6">
+                 <div class="article">
+                    <a href="${article.url}">
+                        <p class="title">${article.title}</p>
+                        <img src="${article.urlToImage}">
+                        <p class="description">${article.description}</p>
+                    </a>
+                </div>
+            </div>
         </div>
+       
     
     `
 }
